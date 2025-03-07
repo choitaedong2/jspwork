@@ -11,3 +11,4 @@
 
 3. Project Explorer
  : Java EE -> Dynamic Web Project 사용
+ 1) Target runtime -> Apache Tomcat > brower[C:\dev\apache-tomcat-10.1.36] bin 상위 폴더 지정
