@@ -12,3 +12,8 @@
 3. Project Explorer
  : Java EE -> Dynamic Web Project 사용
  1) Target runtime -> Apache Tomcat > brower[C:\dev\apache-tomcat-10.1.36] bin 상위 폴더 지정
+
+4. 오류 모음
+ - The selection is not within a vaild module.
+   : Project > properties > Dynamic Web Module v6.0 ~> v5.0으로 재시도
+ - 
