@@ -1,6 +1,6 @@
 # jspwork
 
-[eclips setting]
+[eclips 2023.03 setting]
 1. encoding
  > window>references>encoding검색 ~> utf8로 변경
 
