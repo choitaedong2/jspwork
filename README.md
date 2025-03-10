@@ -18,3 +18,6 @@
 
 4. Option
  - Window>Web Browser : 브라우저 창 생성위치(이클립스, 웹-크롬, ms) 선택
+
+5. Eclipse Marketplace
+ - help> eclipse marketplace : Eclipse Web Developer Tools 3.29 (js 활용시)
