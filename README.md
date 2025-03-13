@@ -18,3 +18,7 @@
 
 4. Option
  - Window>Web Browser : 브라우저 창 생성위치(이클립스, 웹-크롬, ms) 선택
+
+
+5. Oracle DB JDBC연동
+ - "C:\app\TJ\product\18.0.0\dbhomeXE\jdbc\lib\ojdbc8.jar"를 프로젝트(ch06_orcleJDBC)\src\main\webapp\WEB_INF\lib\ojdbc8.jar 복사
