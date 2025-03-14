@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<!-- VoteDao에서 가져온 값을 변수별로 사용하기 위해 java클래스 import-->
+<%@ page import="ch09.*, java.util.*" %>
+<jsp:useBean id="vDao" class="ch09.VoteDao" />
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +15,7 @@
 	div {width: 800px;}
 	h2 {text-align: center;}
 	.m30 {margin-top: 30px; text-align: center;}
-	
+	a {text-decoration: none; color:black; cursor:pointer;}
 </style>
 </head>
 <body>
@@ -26,12 +29,26 @@
 	
 	<h4 class="m30">설 문 리 스 트</h4>
 	<table class="table">
-		<tr>
+		<tr align="center">
 			<th>번호</th>
 			<th>제목</th>
 			<th>시작일~종료일</th>
 		</tr>
-		
+		<%
+			ArrayList<VoteList> alist = vDao.getList();
+			for(int i=0; i<alist.size(); i++) {
+				VoteList vlist = alist.get(i);
+				int num = vlist.getNum();
+				String question = vlist.getQuestion();
+				String sdate = vlist.getSdate();
+				String edate = vlist.getEdate();
+				out.print("<tr>");
+				out.print("		<td>"+ (alist.size()-i) +"</td>");
+				out.print("		<td><a href='voteList.jsp?num="+num+"'>"+ question +"</a></td>");
+				out.print("		<td>"+ sdate + " ~ " + edate +"</td>");
+				out.print("</tr>");
+			}
+		%>
 		<tr>
 			<td colspan="3"><button type="button" onclick="location.href='voteInsert.jsp'">설문 작성하기</button></td>
 		</tr>
