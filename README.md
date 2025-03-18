@@ -44,4 +44,9 @@ pstmt.setString(1(첫번째'?'표), 넣을 값)
 pstmst.executeQuery();
 ResultSet rs = pstmt.executeQuery();
 
-3) 
+3) mvnrepository -> ajax, Gson
+- json-simple = https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple/1.1.1
+  > .jar 파일을 라이브러리에 이동
+- GSON = https://mvnrepository.com/artifact/com.google.code.gson/gson
+  > .jar 파일을 라이브러리에 이동
+4) 
