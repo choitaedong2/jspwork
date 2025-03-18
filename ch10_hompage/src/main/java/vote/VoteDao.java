@@ -1,7 +1,8 @@
-package ch09;
+package vote;
 
 import java.sql.*;
 import java.util.*;
+import orcledb.DBConnectionMgr;
 
 public class VoteDao {
 	DBConnectionMgr pool = DBConnectionMgr.getInstance();
